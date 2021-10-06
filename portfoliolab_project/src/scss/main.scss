@@ -1,7 +1,7 @@
-@import url(/generics/_reset.css);
-@import url(/settings/_fonts.scss);
-@import url(/settings/_colors.scss);
+@import 'generics/_reset.css';
+@import 'settings/_fonts.scss';
+@import 'settings/_colors.scss';
 
 body {
-  font-family: $font-base;
-}
+   font-family: $font-base;
+ }

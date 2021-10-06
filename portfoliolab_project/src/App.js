@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Nav from "./comonents/Nav"
 import Home from "./comonents/Home/Home";
 import Form from "./comonents/Form";
 import Login from "./comonents/Login";
@@ -9,8 +10,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-        <Router>
+      <Router>
+        <div className="App">
+            <Nav/>
             <Switch>
                 <Route path='/' exact component={Home}/>
                 <Route path='/oddaj-rzeczy' component={Form}/>
@@ -18,8 +20,8 @@ function App() {
                 <Route path='/rejestracja' component={Register}/>
                 <Route path='/wylogowano' component={Logout}/>
             </Switch>
-        </Router>
-    </div>
+        </div>
+      </Router>
   );
 }
 

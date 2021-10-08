@@ -1,0 +1,26 @@
+.web_nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 37px 142px 17px 0;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    li {
+      padding: 9px 10px;
+      text-align: right;
+      font-family: $font-base;
+      font-size: 13px;
+      letter-spacing: 0;
+      color: $color-grey;
+      opacity: 1;
+      border: 0.75px solid white;
+      &:hover {
+        border: 0.75px solid $color-yellow;
+      }
+    }
+  }
+}

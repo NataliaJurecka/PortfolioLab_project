@@ -1,7 +1,8 @@
 @import 'generics/_reset.css';
 @import 'settings/_fonts.scss';
 @import 'settings/_colors.scss';
+@import 'settings/base';
+@import "elements/login_logout_section";
+@import 'elements/home_page/home_header';
 
-body {
-   font-family: $font-base;
- }
+

@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
+import './scss/main.scss';
 import Nav from "./comonents/Nav"
 import Home from "./comonents/Home/Home";
 import Form from "./comonents/Form";
 import Login from "./comonents/Login";
 import Register from "./comonents/Register";
 import Logout from "./comonents/Logout";
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (

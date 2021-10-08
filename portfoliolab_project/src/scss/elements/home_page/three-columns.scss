@@ -1,0 +1,46 @@
+.three_columns_section {
+  background-color: $color-yellow;
+  background-image: url("../../../assets/3 Columns Background.png");
+  width: 100vw;
+  height: 384px;
+  position: relative;
+  top: -585px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .column_container {
+    width: 334px;
+    height: 252px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .number {
+      text-align: center;
+      font-family: $font-base;
+      font-size: 90px;
+      letter-spacing: 0;
+      color: $color-brown;
+    }
+
+    h1 {
+      text-align: left;
+      font-family: $font-base;
+      font-size: 18px;
+      letter-spacing: -0.36px;
+      color: $color-black;
+      margin-top: 28px;
+    }
+
+    p {
+      text-align: center;
+      font-family: $font-base;
+      font-size: 16px;
+      letter-spacing: -0.32px;
+      color: $color-black;
+      margin-top: 28px;
+    }
+  }
+}

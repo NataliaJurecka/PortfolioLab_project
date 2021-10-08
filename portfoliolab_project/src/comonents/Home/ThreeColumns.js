@@ -6,7 +6,7 @@ import React from 'react';
 function ThreeColumns() {
 
     return (
-        <div className='three_colums_section'>
+        <div className='three_columns_section'>
             <div className='column_container'>
                 <div className='number'>10</div>
                 <h1>ODDANYCH WORKÓW</h1>

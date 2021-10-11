@@ -1,0 +1,55 @@
+.about_us {
+  width: 100vw;
+  background-color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -420px;
+  .text_container {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    .about_us_tittle {
+      text-align: center;
+      font-family: $font-base;
+      font-size: 30px;
+      color: $color-black;
+    }
+    .decor {
+      width: 253px;
+      height: 33px;
+      margin-top: 26px;
+      margin-bottom: 40px;
+    }
+    .about_us_text {
+      width: 600px;
+      height: 209px;
+      text-align: center;
+      font-family: $font-base;
+      font-size: 26px;
+      color: $color-black;
+      line-height: 45px;
+
+    }
+    .signature {
+      width: 209px;
+      background-size: cover;
+      margin-left: 400px;
+    }
+
+  }
+  .img_container {
+    width: 50vw;
+    .about_us_img {
+      width: 942px;
+      background-size: cover;
+      position: relative;
+
+    }
+  }
+}

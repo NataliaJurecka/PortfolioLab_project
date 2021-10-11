@@ -1,0 +1,25 @@
+.btn_1 {
+  width: 310px;
+  height: 120px;
+  margin-right: 22px;
+  margin-left: 22px;
+  border: 0.75px solid $color-black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    width: 124px;
+    height: 94px;
+    text-align: center;
+    font-family: $font-base;
+    font-size: 34px;
+    font-weight: lighter;
+    letter-spacing: 0;
+    color: $color-black;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

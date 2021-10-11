@@ -1,9 +1,12 @@
 @import 'generics/_reset.css';
 @import 'settings/_fonts.scss';
 @import 'settings/_colors.scss';
+@import 'settings/buttons';
 @import 'settings/base';
-@import "elements/login_logout_section";
-@import 'elements/home_page/home_header';
-@import "elements/home_page/three-columns";
-
+@import 'elements/login-logout-section';
+@import 'elements/home_page/home-header';
+@import 'elements/home_page/three-columns';
+@import 'elements/home_page/simple-steps';
+@import 'elements/home_page/about-us';
+@import 'elements/home_page/contact';
 

@@ -29,7 +29,6 @@
       text-align: left;
       font-family: $font-base;
       font-size: 18px;
-      letter-spacing: -0.36px;
       color: $color-black;
       margin-top: 28px;
     }
@@ -37,8 +36,8 @@
     p {
       text-align: center;
       font-family: $font-base;
-      font-size: 16px;
-      letter-spacing: -0.32px;
+      font-size: 14px;
+      line-height: 2;
       color: $color-black;
       margin-top: 28px;
     }

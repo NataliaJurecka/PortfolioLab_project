@@ -3,6 +3,7 @@ import HomeHeader from "./HomeHeader";
 import ThreeColumns from "./ThreeColumns";
 import SimpleSteps from "./SimpleSteps";
 import AboutUs from "./AboutUs";
+import Contact from './Contact';
 
 function Home() {
     return (
@@ -11,6 +12,7 @@ function Home() {
             <ThreeColumns/>
             <SimpleSteps/>
             <AboutUs/>
+            <Contact/>
         </>
     );
 }

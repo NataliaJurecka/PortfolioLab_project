@@ -6,25 +6,25 @@ import decorUrl from "../../assets/Decoration.svg";
 
 function Contact() {
     return (
-        <>
-            <div id="contact" className='contact_section'>
-                <img className='contact_background' src={imageUrl} alt=''/>
-            </div>
-            <h1>Skontaktuj się z nami</h1>
-            <img className='decor' src={decorUrl} alt=''/>
-            <label>
-                <label>
-                    <input type='text'/>
-                    <input type='email'/>
-                </label>
-                <label>
-                    <input type='textarea'/>
-                </label>
-            </label>
-            <button>Wyślij</button>
+        <div id="contact" className='contact_section'>
+            <img className='contact_background' src={imageUrl} alt=''/>
+                <div className='contact-container'>
+                    <h1>Skontaktuj się z nami</h1>
+                    <img className='decor' src={decorUrl} alt=''/>
+                    <label className='whole-form'>
+                        <label className='name_email_input'>
+                            <input type='text'/>
+                            <input type='email'/>
+                        </label>
+                        <label>
+                            <input type='textarea'/>
+                        </label>
+                    </label>
+                    <button className='btn_4'>Wyślij</button>
+                </div>
             <img src={fbImgUrl} alt=''/>
             <img src={igImgUrl} alt=''/>
-        </>
+        </div>
     );
 }
 

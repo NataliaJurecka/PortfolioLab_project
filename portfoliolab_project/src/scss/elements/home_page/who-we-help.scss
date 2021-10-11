@@ -1,7 +1,7 @@
 .who-we-help {
   position: relative;
   top: -420px;
-  padding-top: 70px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   .description_section {
     display: flex;
@@ -39,16 +39,55 @@
       font-size:  22px;
       line-height: 30px;
       color: $color-black;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
 
     ul {
       width: 1344px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       li {
-        width: 1344px;
+        width: 1200px;
         height: 81px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 45px;
+        .el_title {
+          text-align: left;
+          font-family: $font-alt;
+          font-size: 26px;
+          font-weight: lighter;
+          line-height: 31px;
+          color: $color-black;
+          margin-bottom: 8px;
+        }
+        .el_subtitle {
+          text-align: left;
+          font-family: $font-alt;
+          font-size: 18px;
+          line-height: 22px;
+          color: $color-black;
+          font-style: italic;
+        }
+        .el_description {
+          text-align: left;
+          font-family: $font-alt;
+          font-size: 18px;
+          font-weight: lighter;
+          line-height: 22px;
+          color: $color-black;
+        }
       }
     }
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 }

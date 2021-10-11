@@ -1,4 +1,6 @@
 .contact_section {
+  position: relative;
+  top: -300px;
 
   .contact_background {
     width: 100vw;
@@ -6,5 +8,34 @@
     opacity: 0.2;
     position: relative;
     left: -50px;
+  }
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -750px;
+    left: 300px;
+    h1 {
+      text-align: center;
+      font-family: $font-base;
+      font-size: 38px;
+      color: $color-black;
+      }
+    .decor {
+      width: 253px;
+      height: 33px;
+      margin-top: 24px;
+      margin-bottom: 30px;
+    }
+    .whole-form{
+      width: 528px;
+      display: flex;
+      flex-direction: column;
+      .name_email_input{
+
+      }
+    }
   }
 }

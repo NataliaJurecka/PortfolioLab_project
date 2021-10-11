@@ -31,12 +31,19 @@ const WhoWeHelp = () => {
             <ul>
                 {fundation?.items?.map(el => (
                     <li>
-                        <p>{el.title}</p>
-                        <p>{el.subtitle}</p>
-                        <i>{el.desc}</i>
-                        </li>
+                        <div>
+                            <p className='el_title'>{el.title}</p>
+                            <p className='el_subtitle'>{el.subtitle}</p>
+                        </div>
+                        <i className='el_description'>{el.desc}</i>
+                    </li>
                 ))}
             </ul>
+        </div>
+        <div className='buttons'>
+            <button className='btn_3'><span>1</span></button>
+            <button className='btn_3'><span>2</span></button>
+            <button className='btn_3'><span>3</span></button>
         </div>
     </div>
     )

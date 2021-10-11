@@ -1,19 +1,22 @@
 .simple_steps {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   h1 {
     text-align: center;
     font-family: $font-base;
     font-size: 38px;
     color: $color-black;
     position: relative;
-    top: -500px;
+    top: -570px;
+    padding-top: 60px;
   }
   .decor {
     position: relative;
-    top: -475px;
+    top: -545px;
   }
   .simple_steps_container {
     width: 100vw;
@@ -23,7 +26,7 @@
     align-items: center;
     background: #F0F1F1 0 0 no-repeat;
     position: relative;
-    top: -440px;
+    top: -510px;
     .step {
       width: 140px;
       height: 175px;
@@ -62,7 +65,7 @@
   }
   .btn_1 {
     position: relative;
-    top: -410px;
+    top: -480px;
     margin-bottom: 80px;
   }
 }

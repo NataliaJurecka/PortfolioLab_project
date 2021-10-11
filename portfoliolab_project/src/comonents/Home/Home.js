@@ -4,6 +4,7 @@ import ThreeColumns from "./ThreeColumns";
 import SimpleSteps from "./SimpleSteps";
 import AboutUs from "./AboutUs";
 import Contact from './Contact';
+import WhoWeHelp from './WhoWeHelp';
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
             <ThreeColumns/>
             <SimpleSteps/>
             <AboutUs/>
+            <WhoWeHelp />
             <Contact/>
         </>
     );

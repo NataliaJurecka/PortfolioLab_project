@@ -9,8 +9,8 @@ import decorUrl from "../../assets/Decoration.svg";
 function SimpleSteps() {
 
     return (
-        <div className='simple_steps'>
-            <h1>Wystarczą 4 proste kroki</h1>
+        <div  className='simple_steps'>
+            <h1 id='simple_steps'>Wystarczą 4 proste kroki</h1>
             <img className='decor' src={decorUrl} alt=''/>
             <div className='simple_steps_container'>
                 <div className='step'>

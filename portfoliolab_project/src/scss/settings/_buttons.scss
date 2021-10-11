@@ -23,3 +23,28 @@
     align-items: center;
   }
 }
+.btn_2 {
+  width: 210px;
+  height: 80px;
+  margin-right: 40px;
+  margin-left: 40px;
+  border: 0.75px solid $color-black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    width: 170px;
+    height: 60px;
+    text-align: center;
+    font-family: $font-base;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 24px;
+    color: $color-black;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

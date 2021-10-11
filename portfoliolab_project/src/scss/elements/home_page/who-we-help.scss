@@ -1,0 +1,54 @@
+.who-we-help {
+  position: relative;
+  top: -420px;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .who-we-help-title {
+    text-align: center;
+    font-family: $font-base;
+    font-size: 38px;
+    color: $color-black;
+
+  }
+  .decor {
+    width: 253px;
+    height: 33px;
+    margin-top: 24px;
+    margin-bottom: 30px;
+  }
+  .btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .description_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .description {
+      width: 640px;
+      height: 94px;
+      text-align: center;
+      font-family: $font-base;
+      font-size:  22px;
+      line-height: 30px;
+      color: $color-black;
+      margin-bottom: 50px;
+    }
+
+    ul {
+      width: 1344px;
+
+      li {
+        width: 1344px;
+        height: 81px;
+      }
+    }
+  }
+}

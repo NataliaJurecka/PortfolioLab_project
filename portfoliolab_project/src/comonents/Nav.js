@@ -1,8 +1,15 @@
 import React from 'react';
 // import './App.css';
 import { Link} from "react-router-dom";
+import { Link as ScrollLink } from 'react-scroll'
 
 function Nav() {
+
+    const options = {
+        smooth: true,
+        duration: 500,
+        delay: 200,
+    }
 
     return (
         <div>
@@ -18,21 +25,12 @@ function Nav() {
             </nav>
             <nav className='nav-home'>
                 <ul>
-                    <Link  to='/'>
-                        <li>Start</li>
-                    </Link>
-                    <Link  to='/'>
-                        <li>O co chodzi?</li>
-                    </Link>
-                    <a>
-                        <li>O nas</li>
-                    </a>
-                    <a>
-                        <li>Fundacja i organizacje</li>
-                    </a>
-                    <a>
-                        <li>Kontakt</li>
-                    </a>
+                    <li>Start</li>
+                    <li><ScrollLink to="simple_steps" {...options}>O co chodzi?</ScrollLink></li>
+                    <li><ScrollLink to="about_us" {...options}>O nas</ScrollLink></li>
+                    <li><ScrollLink to="who-we-help" {...options}>Fundacje i organizacje</ScrollLink></li>
+                    <li><ScrollLink to="contact" {...options}>Kontakt</ScrollLink></li>
+
 
                 </ul>
             </nav>

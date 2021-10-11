@@ -8,7 +8,7 @@ import signatureUrl from '../../assets/Signature.svg'
 function AboutUs() {
 
     return (
-        <div className='about_us'>
+        <div id='about_us' className='about_us'>
             <div className='text_container'>
                 <h1 className='about_us_tittle'>O nas</h1>
                 <img className='decor' src={decorUrl} alt=''/>

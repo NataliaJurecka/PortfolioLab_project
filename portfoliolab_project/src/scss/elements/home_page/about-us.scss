@@ -1,11 +1,9 @@
 .about_us {
-  width: 100vw;
   background-color: $color-white;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: -420px;
+
   .text_container {
     width: 50vw;
     display: flex;
@@ -37,18 +35,20 @@
 
     }
     .signature {
-      width: 209px;
+
       background-size: cover;
-      margin-left: 400px;
+      display: flex;
+      align-self: flex-end;
+      padding-right: 152px;
     }
 
   }
   .img_container {
     width: 50vw;
+
     .about_us_img {
       width: 942px;
       background-size: cover;
-      position: relative;
 
     }
   }

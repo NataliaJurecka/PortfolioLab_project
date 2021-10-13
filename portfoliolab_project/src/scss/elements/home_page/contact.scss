@@ -1,113 +1,119 @@
 .contact_section {
-  position: relative;
-  top: -300px;
-  height: 1026px;
+  //background: url("../../../assets/Background-Contact-Form.jpg") 0 0 no-repeat;
+  display: flex;
+
+  align-items: center;
+
 
   .contact_background {
-    width: 100vw;
-    background-size: cover;
-    opacity: 0.2;
-    position: relative;
-    left: -50px;
+    width: 1200px;
+    opacity: 0.15;
   }
-  .contact-container {
+  .contact_elements {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-self: flex-end;
     flex-direction: column;
-    position: relative;
-    top: -750px;
-    left: 300px;
-    h1 {
-      text-align: center;
-      font-family: $font-base;
-      font-size: 38px;
-      color: $color-black;
-      }
-    .decor {
-      width: 253px;
-      height: 33px;
-      margin-top: 24px;
-      margin-bottom: 30px;
-    }
 
-    .whole-form {
-      width: 528px;
+    .contact-container {
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-end;
 
-      .form_first_section {
-        width: 528px;
-        height: 62px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      h1 {
+        text-align: center;
+        font-family: $font-base;
+        font-size: 38px;
+        color: $color-black;
+      }
+
+      .decor {
+        width: 253px;
+        height: 33px;
+        margin-top: 24px;
         margin-bottom: 30px;
+      }
 
-        .input_box_info {
-          text-align: left;
-          font-family: $font-base;
-          font-size: 16px;
-          font-weight: 600;
-          line-height: 62px;
-          color: $color-black;
-        }
-        .input_box {
-          width: 250px;
-          height: 32px;
-          border: none;
-          border-bottom: 1px solid $color-grey;
-          text-align: left;
-          font-family: $font-base;
-          font-size: 18px;
-          line-height: 85px;
-          color: $color-black 0.15;
-          opacity: 1;
-        }
-      }
-      .input_box_large {
+      .whole-form {
         width: 528px;
-        .input_box_info {
-          text-align: left;
-          font-family: $font-base;
-          font-size: 16px;
-          font-weight: 600;
-          line-height: 62px;
-          color: $color-black;
-        }
-        .input_textarea {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .form_first_section {
           width: 528px;
-          height: 97px;
-          border: none;
-          border-bottom: 1px solid $color-grey;
-          text-align: left;
-          font-family: $font-base;
-          font-size: 18px;
-          line-height: 24px;
-          color: $color-black 0.05;
-          background: none;
+          height: 62px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 30px;
+
+          .input_box_info {
+            text-align: left;
+            font-family: $font-base;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 62px;
+            color: $color-black;
+          }
+
+          .input_box {
+            width: 250px;
+            height: 32px;
+            border: none;
+            border-bottom: 1px solid $color-grey;
+            text-align: left;
+            font-family: $font-base;
+            font-size: 18px;
+            line-height: 85px;
+            color: $color-black 0.15;
+            background: none;
+          }
         }
-      }
-      .btn_4 {
-        margin-top: 45px;
+
+        .input_box_large {
+          width: 528px;
+
+          .input_box_info {
+            text-align: left;
+            font-family: $font-base;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 62px;
+            color: $color-black;
+          }
+
+          .input_textarea {
+            width: 528px;
+            height: 97px;
+            border: none;
+            border-bottom: 1px solid $color-grey;
+            text-align: left;
+            font-family: $font-base;
+            font-size: 18px;
+            line-height: 24px;
+            color: $color-black 0.05;
+            background: none;
+          }
+        }
+
+        .btn_4 {
+          margin-top: 45px;
+        }
       }
     }
-  }
-  .footer {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -510px;
-    .icons {
-      position: relative;
-      left: 430px;
-      img {
-        margin-right: 10px;
-        margin-left: 10px;
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .icons {
+        img {
+          margin-right: 10px;
+          margin-left: 10px;
+        }
       }
     }
   }

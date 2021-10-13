@@ -1,13 +1,10 @@
 .three_columns_section {
   background-color: $color-yellow;
   background-image: url("../../../assets/3 Columns Background.png");
-  width: 100vw;
   height: 384px;
-  position: relative;
-  top: -585px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
   .column_container {
     width: 334px;

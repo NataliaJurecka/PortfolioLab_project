@@ -12,9 +12,9 @@ function Nav() {
     }
 
     return (
-        <div>
+        <div className='nav'>
             <nav className="web_nav">
-                <ul className="nav-links">
+                <ul className="nav-login">
                     <Link  to='/logowanie'>
                         <li>Zaloguj</li>
                     </Link>
@@ -24,8 +24,8 @@ function Nav() {
                 </ul>
             </nav>
             <nav className='nav-home'>
-                <ul>
-                    <li>Start</li>
+                <ul className='nav-page'>
+                    <Link to='/'><li>Start</li></Link>
                     <li><ScrollLink to="simple_steps" {...options}>O co chodzi?</ScrollLink></li>
                     <li><ScrollLink to="about_us" {...options}>O nas</ScrollLink></li>
                     <li><ScrollLink to="who-we-help" {...options}>Fundacje i organizacje</ScrollLink></li>

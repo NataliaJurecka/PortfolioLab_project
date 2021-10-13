@@ -8,6 +8,7 @@ function Contact() {
     return (
         <div id="contact" className='contact_section'>
             <img className='contact_background' src={imageUrl} alt=''/>
+            <div className='contact_elements'>
                 <div className='contact-container'>
                     <h1>Skontaktuj się z nami</h1>
                     <img className='decor' src={decorUrl} alt=''/>
@@ -28,13 +29,13 @@ function Contact() {
                         </label>
                         <button className='btn_4'>Wyślij</button>
                     </div>
-
                 </div>
-            <div className='footer'>
-                <h1 className='copyright'>Copyright by Coders Lab</h1>
-                <div className='icons'>
-                    <img src={fbImgUrl} alt=''/>
-                    <img src={igImgUrl} alt=''/>
+                <div className='footer'>
+                    <h1 className='copyright'>Copyright by Coders Lab</h1>
+                    <div className='icons'>
+                        <img src={fbImgUrl} alt=''/>
+                        <img src={igImgUrl} alt=''/>
+                    </div>
                 </div>
             </div>
         </div>

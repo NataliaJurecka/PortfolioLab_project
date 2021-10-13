@@ -1,5 +1,4 @@
 .simple_steps {
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,31 +9,27 @@
     font-family: $font-base;
     font-size: 38px;
     color: $color-black;
-    position: relative;
-    top: -570px;
-    padding-top: 60px;
+    padding-top: 55px;
+
   }
   .decor {
-    position: relative;
-    top: -545px;
+    padding: 25px 0 34px;
   }
   .simple_steps_container {
     width: 100vw;
     height: 325px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background: #F0F1F1 0 0 no-repeat;
-    position: relative;
-    top: -510px;
+
+
     .step {
       width: 140px;
-      height: 175px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin: 0 82px;
 
       img {
         width: 83px;
@@ -42,7 +37,7 @@
         margin-bottom: 23px;
       }
       h2 {
-        text-align: left;
+        text-align: center;
         font-family: $font-base;
         font-size: 18px;
         color: $color-black;
@@ -64,8 +59,7 @@
     }
   }
   .btn_1 {
-    position: relative;
-    top: -480px;
+    margin-top: 35px;
     margin-bottom: 80px;
   }
 }

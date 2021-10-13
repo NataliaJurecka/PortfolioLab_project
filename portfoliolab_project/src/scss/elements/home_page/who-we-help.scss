@@ -1,11 +1,11 @@
 .who-we-help {
-  position: relative;
-  top: -420px;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 80px;
+
   .who-we-help-title {
     text-align: center;
     font-family: $font-base;
@@ -88,6 +88,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 }

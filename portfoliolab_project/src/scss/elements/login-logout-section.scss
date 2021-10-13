@@ -1,55 +1,60 @@
-.web_nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 37px 142px 17px 0;
+.nav {
+  padding-right: 142px;
+  padding-top: 37px;
 
-  ul {
+  .web_nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
-    li {
-      padding: 9px 10px;
-      text-align: right;
-      font-family: $font-base;
-      font-size: 13px;
-      letter-spacing: 0;
-      color: $color-grey;
-      opacity: 1;
-      border: 0.75px solid white;
-      &:hover {
-        border: 0.75px solid $color-yellow;
-      }
-      &:visited {
+
+    .nav-login{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 17px;
+
+      li {
+        padding: 9px 10px;
+        text-align: right;
+        font-family: $font-base;
+        font-size: 13px;
+        letter-spacing: 0;
+        color: $color-grey;
+        opacity: 1;
         border: 0.75px solid white;
+        &:hover {
+          border: 0.75px solid $color-yellow;
+        }
+        &:visited {
+          border: 0.75px solid white;
+        }
       }
     }
   }
-}
-.nav-home {
+  .nav-home {
 
-  ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 142px;
-  }
+    .nav-page {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
 
-  li {
-    padding: 9px 20px;
-    text-align: right;
-    font-family: $font-base;
-    font-size: 18px;
-    letter-spacing: 0;
-    color: $color-black;
-    border: 0.75px solid white;
+      li {
+        padding: 9px 20px;
+        text-align: right;
+        font-family: $font-base;
+        font-size: 18px;
+        letter-spacing: 0;
+        color: $color-black;
+        border: 0.75px solid white;
 
-    &:hover {
-      border: 0.75px solid $color-black;
-    }
-    &:visited {
-      border: 0.75px solid white;
+        &:hover {
+          border: 0.75px solid $color-black;
+          }
+        }
+        &:visited {
+          border: 0.75px solid white;
+        }
     }
   }
 }

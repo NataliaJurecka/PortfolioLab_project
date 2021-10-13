@@ -6,7 +6,7 @@ const WhoWeHelp = () => {
     const [current, setCurrent] = useState("fundations");
 
     useEffect(() => {
-        fetch(`http://localhost:3005/${current}`)
+        fetch(`http://localhost:3000/${current}`)
             .then(res => res.json())
             .then(fund => setFundation(fund))
     }, [current])

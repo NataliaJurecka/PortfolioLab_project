@@ -1,6 +1,7 @@
 .contact_section {
   position: relative;
   top: -300px;
+  height: 1026px;
 
   .contact_background {
     width: 100vw;
@@ -29,12 +30,84 @@
       margin-top: 24px;
       margin-bottom: 30px;
     }
-    .whole-form{
+
+    .whole-form {
       width: 528px;
       display: flex;
       flex-direction: column;
-      .name_email_input{
+      justify-content: space-between;
+      align-items: flex-end;
 
+      .form_first_section {
+        width: 528px;
+        height: 62px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .input_box_info {
+          text-align: left;
+          font-family: $font-base;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 62px;
+          color: $color-black;
+        }
+        .input_box {
+          width: 250px;
+          height: 32px;
+          border: none;
+          border-bottom: 1px solid $color-grey;
+          text-align: left;
+          font-family: $font-base;
+          font-size: 18px;
+          line-height: 85px;
+          color: $color-black 0.15;
+          opacity: 1;
+        }
+      }
+      .input_box_large {
+        width: 528px;
+        .input_box_info {
+          text-align: left;
+          font-family: $font-base;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 62px;
+          color: $color-black;
+        }
+        .input_textarea {
+          width: 528px;
+          height: 97px;
+          border: none;
+          border-bottom: 1px solid $color-grey;
+          text-align: left;
+          font-family: $font-base;
+          font-size: 18px;
+          line-height: 24px;
+          color: $color-black 0.05;
+          background: none;
+        }
+      }
+      .btn_4 {
+        margin-top: 45px;
+      }
+    }
+  }
+  .footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -510px;
+    .icons {
+      position: relative;
+      left: 430px;
+      img {
+        margin-right: 10px;
+        margin-left: 10px;
       }
     }
   }

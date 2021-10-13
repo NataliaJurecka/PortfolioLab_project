@@ -1,0 +1,66 @@
+.login_view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  h1 {
+    text-align: center;
+    font-family: $font-base;
+    font-size: 40px;
+    line-height: 55px;
+    color: $color-black;
+  }
+  .decor {
+    width: 253px;
+    height: 33px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+  }
+  .login_form {
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 70px;
+    margin-bottom: 40px;
+    label {
+      width: 250px;
+      text-align: left;
+      font-family: $font-base;
+      font-size: 16px;
+      line-height: 35px;
+      font-weight: 600;
+      color: $color-black;
+      display: flex;
+      flex-direction: column;
+      input {
+        background: none;
+        border: none;
+        border-bottom: 1px solid $color-black;
+        padding: 3px;
+        text-align: left;
+        font-family: $font-base;
+        font-size: 18px;
+        line-height: 35px;
+
+      }
+    }
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn_3 {
+      width: 120px;
+      height: 50px;
+      margin-left: 150px;
+      margin-right: 150px;
+      border: 0.75px solid white;
+      &:hover {
+        border: 0.75px solid $color-black;
+      }
+    }
+  }
+}

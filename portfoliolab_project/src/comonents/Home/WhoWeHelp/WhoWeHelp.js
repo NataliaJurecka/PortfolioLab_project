@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import decorUrl from "../../assets/Decoration.svg";
+import decorUrl from "../../../assets/Decoration.svg";
+
 
 const WhoWeHelp = () => {
     const [fundation, setFundation] = useState({});

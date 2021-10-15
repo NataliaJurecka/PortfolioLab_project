@@ -1,25 +1,28 @@
 .contact_section {
-  //background: url("../../../assets/Background-Contact-Form.jpg") 0 0 no-repeat;
   display: flex;
-
   align-items: center;
-
+  justify-content: flex-end;
 
   .contact_background {
-    width: 1200px;
+    width: 80%;
+    position: absolute;
+    left: 0;
     opacity: 0.15;
+    background-position: bottom;
   }
 
   .contact_elements {
-    //display: flex;
-    //justify-self: flex-end;
-    //flex-direction: column;
+    display: flex;
+    justify-self: flex-end;
+    flex-direction: column;
+    padding-right: 142px;
+    margin-bottom: 150px;
 
     .contact-container {
-      //display: flex;
-      //justify-content: center;
-      //align-items: center;
-      //flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
       h1 {
         text-align: center;
@@ -35,91 +38,93 @@
         margin-bottom: 30px;
       }
 
-      //  .whole-form {
-      //    width: 528px;
-      //    display: flex;
-      //    flex-direction: column;
-      //    justify-content: space-between;
-      //    align-items: flex-end;
-      //
-      //    .form_first_section {
-      //      width: 528px;
-      //      height: 62px;
-      //      display: flex;
-      //      justify-content: space-between;
-      //      align-items: center;
-      //      margin-bottom: 30px;
-      //
-      //      .input_box_info {
-      //        text-align: left;
-      //        font-family: $font-base;
-      //        font-size: 16px;
-      //        font-weight: 600;
-      //        line-height: 62px;
-      //        color: $color-black;
-      //      }
-      //
-      //      .input_box {
-      //        width: 250px;
-      //        height: 32px;
-      //        border: none;
-      //        border-bottom: 1px solid $color-grey;
-      //        text-align: left;
-      //        font-family: $font-base;
-      //        font-size: 18px;
-      //        line-height: 85px;
-      //        color: $color-black 0.15;
-      //        background: none;
-      //      }
-      //    }
-      //
-      //    .input_box_large {
-      //      width: 528px;
-      //
-      //      .input_box_info {
-      //        text-align: left;
-      //        font-family: $font-base;
-      //        font-size: 16px;
-      //        font-weight: 600;
-      //        line-height: 62px;
-      //        color: $color-black;
-      //      }
-      //
-      //      .input_textarea {
-      //        width: 528px;
-      //        height: 97px;
-      //        border: none;
-      //        border-bottom: 1px solid $color-grey;
-      //        text-align: left;
-      //        font-family: $font-base;
-      //        font-size: 18px;
-      //        line-height: 24px;
-      //        color: $color-black 0.05;
-      //        background: none;
-      //      }
-      //    }
-      //
-      //    .btn_4 {
-      //      margin-top: 45px;
-      //    }
-      //  }
-      //}
-
-      .footer {
+      .whole-form {
+        width: 528px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
 
-        .icons {
-          img {
-            margin-right: 10px;
-            margin-left: 10px;
+        .form_first_section {
+          width: 528px;
+          height: 62px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 30px;
+
+            .input_box_info {
+              text-align: left;
+              font-family: $font-base;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 30px;
+              color: $color-black;
+            }
+
+          .input_box {
+            width: 250px;
+            height: 32px;
+            border: none;
+            border-bottom: 1px solid $color-grey;
+            text-align: left;
+            font-family: $font-base;
+            font-size: 18px;
+            line-height: 85px;
+            color: $color-black 0.01;
+            background: none;
           }
         }
+
+            .input_box_large {
+              width: 528px;
+
+              .input_box_info {
+                text-align: left;
+                font-family: $font-base;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 62px;
+                color: $color-black;
+              }
+
+              .textarea {
+                width: 528px;
+                height: 97px;
+                border: none;
+                border-bottom: 1px solid $color-grey;
+                text-align: left;
+                font-family: $font-base;
+                font-size: 18px;
+                line-height: 24px;
+                color: $color-black 0.05;
+                background: none;
+              }
+            }
+
+            .btn_4 {
+              margin-top: 45px;
+            }
+          }
+        }
+      }
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 142px;
+    h1 {
+      position: absolute;
+      left: 43%;
+    }
+
+    .icons {
+      img {
+        margin-right: 10px;
+        margin-left: 10px;
       }
     }
   }
 }
-
 
 

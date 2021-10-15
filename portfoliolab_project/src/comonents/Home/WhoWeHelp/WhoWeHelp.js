@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import Pagination from "./WhoWeHelpPagination";
 import decorUrl from "../../../assets/Decoration.svg";
 
 
 const WhoWeHelp = () => {
     const [fundation, setFundation] = useState({});
     const [current, setCurrent] = useState("fundations");
+    const [item, setItems] = useState([1]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [itemsPerPage,setItemsPerPage] = useState(3);
 
     useEffect(() => {
         fetch(`http://localhost:3005/${current}`)
@@ -12,11 +16,43 @@ const WhoWeHelp = () => {
             .then(fund => setFundation(fund))
     }, [current])
 
+    useEffect(() => {
+        const fetchItems = async () => {
+            setItems(`http://localhost:3005/${current}`);
+        }
+        fetchItems();
+    }, []);
+
+    const Items = ({items}) => {
+        return (
+            <ul>
+                {items?.map(item => (
+                    <li>
+                        <div>
+                            <p className='el_title'>{item.title}</p>
+                            <p className='el_subtitle'>{item.subtitle}</p>
+                        </div>
+                        <i className='el_description'>{item.desc}</i>
+                    </li>
+                ))}
+            </ul>
+        );
+    };
+    // indexOfFirstItem
+    const indexOfFirstItem = (currentPage -1) * itemsPerPage;
+    const indexOfLastItem = indexOfFirstItem + itemsPerPage;
+    console.log(indexOfFirstItem, indexOfFirstItem)
+    const currentItems = fundation?.items?.slice(indexOfFirstItem, indexOfLastItem);
+
     const handleFundation = (fund) => () => {
         setCurrent(fund)
     }
 
     console.log(fundation);
+
+    const handleCurrentPage = page => {
+        setCurrentPage(page)
+    }
 
     return (
     <div id='who-we-help' className='who-we-help'>
@@ -29,25 +65,12 @@ const WhoWeHelp = () => {
         </div>
         <div className='description_section'>
             <h2 className='description'>{fundation?.desc}</h2>
-            <ul>
-                {fundation?.items?.map(el => (
-                    <li>
-                        <div>
-                            <p className='el_title'>{el.title}</p>
-                            <p className='el_subtitle'>{el.subtitle}</p>
-                        </div>
-                        <i className='el_description'>{el.desc}</i>
-                    </li>
-                ))}
-            </ul>
+            <Items items={currentItems}/>
         </div>
-        <div className='buttons'>
-            <button className='btn_3'><span>1</span></button>
-            <button className='btn_3'><span>2</span></button>
-            <button className='btn_3'><span>3</span></button>
-        </div>
+        <Pagination onChange={handleCurrentPage} itemsParPage={itemsPerPage} totalItems={fundation.items?.length}/>
     </div>
     )
-}
+};
+
 
 export default WhoWeHelp;

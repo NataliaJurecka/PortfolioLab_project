@@ -1,11 +1,12 @@
 .about_us {
+  width: 100%;
   background-color: $color-white;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .text_container {
-    width: 50vw;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +45,7 @@
 
   }
   .img_container {
-    width: 50vw;
+    width: 50%;
 
     .about_us_img {
       width: 942px;
